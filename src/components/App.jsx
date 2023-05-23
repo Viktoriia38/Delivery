@@ -1,16 +1,25 @@
-export const App = () => {
+import { Routes, Route } from 'react-router-dom';
+import React, { lazy, Suspense } from 'react';
+
+const LazyLayout = lazy(() => import('./Layout/Layout'));
+const LazyShopPage = lazy(() => import('../pages/ShopPage/ShopPage'));
+const LazyShoppingCartPage = lazy(() =>
+  import('../pages/ShoppingCartPage/ShoppingCartPage')
+);
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Suspense>
+      <Routes>
+        <Route path="/" element={<LazyLayout />}>
+          <Route index element={<LazyShopPage />} />
+          <Route path="/shopping-cart" element={<LazyShoppingCartPage />} />
+
+          <Route path="*" element={<div>Page not found </div>} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
-};
+}
+
+export default App;

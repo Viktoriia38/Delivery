@@ -1,0 +1,12 @@
+.shopPage {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(14, 14, 113);
+}
+
+.shopPageTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(14, 14, 113);
+}

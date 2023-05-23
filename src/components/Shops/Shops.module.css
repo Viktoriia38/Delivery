@@ -1,0 +1,44 @@
+.shopsWrapp {
+width: 20%;
+height: 35vw;
+
+border: 1px solid rgba(0, 0, 0, 0.781);
+border-radius: 20px;
+margin-top: 15px;
+padding: 10px;
+text-align: center;
+}
+
+.shopsTitle {
+    font-size: 20px;
+}
+
+.shopsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shopsItem {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    background-color: rgba(33, 149, 243, 0.473);
+    
+    &:hover {
+        background-color: rgba(33, 150, 243, 0.9);
+        cursor: pointer;
+    }
+}
+
+.shopsItemBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-style: italic;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+ 

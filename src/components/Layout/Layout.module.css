@@ -1,0 +1,28 @@
+.section {
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+.layout {
+    display: block;
+    padding: 20px 20px 0;
+}
+
+.layoutLink {
+    text-decoration: none;
+    padding-top: 20px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* :global .active {
+
+} */
+
+
+.active {
+    composes: layoutLink;
+    border-bottom: solid 4px rgb(43, 5, 255);
+}
