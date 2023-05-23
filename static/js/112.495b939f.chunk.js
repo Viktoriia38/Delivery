@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdelivery=self.webpackChunkdelivery||[]).push([[112],{112:function(e,a,n){n.r(a),n.d(a,{default:function(){return p}});var r="ShoppingCartPage_shopPage__Kmz-J",i="ShoppingCartPage_shopPageTitle__+LlND",s=n(184);var p=function(){return(0,s.jsx)("div",{className:r,children:(0,s.jsx)("h1",{className:i,children:"Shopping cart page"})})}}}]);
+//# sourceMappingURL=112.495b939f.chunk.js.map
